@@ -1,0 +1,53 @@
+<div [@routerTransition]>
+    <h2 class="text-muted">Dashboard <small>Statistics Overview</small></h2>
+    <div class ="row">
+        <div class="col col-sm-4">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Bar Chart
+                </div>
+                <div class="card-block">
+                    <canvas>
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Bar Chart
+                </div>
+                <div class="card-block">
+                    <canvas basechart>
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Bar Chart
+                </div>
+                <div class="card-block">
+                    <canvas>
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xl-3 col-lg-6">
+            <app-stat [bgClass]="'card-success'"  [count]="26" [label]="'New Comments!'" ></app-stat>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <app-stat [bgClass]="'card-success'"  [count]="12" [label]="'New task!'" ></app-stat>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <app-stat [bgClass]="'card-success'" [count]="124" [label]="'New Orders!'" ></app-stat>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <app-stat [bgClass]="'card-primary'" [count]="13" [label]="'More Infos'"></app-stat>
+        </div>
+    </div>
+</div>

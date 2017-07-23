@@ -1,0 +1,23 @@
+<div class="pos-f-t fixed-top header">
+    <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+        <button class="navbar-toggler navbar-toggler-right" (click)="toggleSidebar()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()">Go </a>
+            </form>
+        </div>
+        <div class="collapse navbar-collapse">
+            <form class="form-inline my-2 my-lg-0">
+                <a class="btn rounded-btn"  [routerLink]="['/tables']"> List </a>
+            </form>
+        </div>
+        <div class="collapse navbar-collapse">
+            <form class="form-inline my-2 my-lg-0">
+                <a class="btn rounded-btn"        [routerLink]="['/login']" (click)="onLoggedout()"> Log out </a>
+            </form>
+        </div>
+    </nav>
+</div>
