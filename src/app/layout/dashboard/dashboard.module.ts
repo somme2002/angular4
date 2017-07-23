@@ -6,7 +6,6 @@ import {
 } from '@ng-bootstrap/ng-bootstrap';
 import { TimelineComponent, NotificationComponent, ChatComponent } from './components/index';
 
-
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { StatModule } from '../../shared';
@@ -14,6 +13,8 @@ import { StatModule } from '../../shared';
 import { ChartsRoutingModule } from '../charts/charts-routing.module';
 import { ChartsComponent } from '../charts/charts.component';
 import { PageHeaderModule } from '../../shared';
+import { ChartsModule as Ng2Charts } from 'ng2-charts';
+
 
 @NgModule({
     imports: [
@@ -22,6 +23,7 @@ import { PageHeaderModule } from '../../shared';
         NgbAlertModule.forRoot(),
         DashboardRoutingModule,
         StatModule,
+        Ng2Charts
     ],
     declarations: [
         DashboardComponent,
